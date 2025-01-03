@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Redemption System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Key Redemption</h1>
+        <p>Thank you for completing the Linkvertise task! Redeem your key below:</p>
+
+        <div class="key-box">
+            <p>Enter your unique code:</p>
+            <input type="text" id="userCode" placeholder="Enter your code here" />
+            <button onclick="redeemCode()">Redeem Code</button>
+        </div>
+
+        <div id="message"></div>
+        <div id="redeemedMessage" class="hidden">
+            <h2>Your Key: <span id="redeemedKey"></span></h2>
+            <p>Your key has been redeemed successfully! You can now use it to access exclusive content.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
